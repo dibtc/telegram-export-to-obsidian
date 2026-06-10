@@ -1,5 +1,9 @@
 # telegram-export-to-obsidian
 
+![Python](https://img.shields.io/badge/python-3.8%2B-blue)
+![License: MIT](https://img.shields.io/badge/license-MIT-green)
+![Dependencies](https://img.shields.io/badge/dependencies-none%20(stdlib%20only)-brightgreen)
+
 Two small, dependency-free Python scripts that turn a **Telegram chat/channel export**
 into a browsable **Obsidian vault** — one Markdown note per message, with media
 embedded, replies and internal links turned into `[[wikilinks]]`, and an
