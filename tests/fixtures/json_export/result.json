@@ -1,0 +1,42 @@
+{
+  "name": "Test Channel",
+  "type": "public_channel",
+  "id": 1234567890,
+  "messages": [
+    {
+      "id": 1,
+      "type": "service",
+      "date": "2022-05-26T14:00:00",
+      "date_unixtime": "1653562800",
+      "action": "create_channel",
+      "title": "Test Channel",
+      "text": "",
+      "text_entities": []
+    },
+    {
+      "id": 2,
+      "type": "message",
+      "date": "2022-05-26T14:02:07",
+      "date_unixtime": "1653562927",
+      "from": "Test Channel",
+      "photo": "photos/photo_2.jpg",
+      "text": "Hello world",
+      "text_entities": [
+        { "type": "plain", "text": "Hello " },
+        { "type": "bold", "text": "world" }
+      ]
+    },
+    {
+      "id": 3,
+      "type": "message",
+      "date": "2022-05-26T14:05:00",
+      "date_unixtime": "1653563100",
+      "from": "Test Channel",
+      "reply_to_message_id": 2,
+      "text": "A reply",
+      "text_entities": [
+        { "type": "plain", "text": "A reply" }
+      ]
+    }
+  ]
+}

@@ -297,7 +297,8 @@ def write_index(rows):
            "| Date | ID | Text start | Media |", "|------|----|----|----|"]
     for dt, mid, preview, mark in rows:
         link = f"[[{dt.strftime('%Y-%m-%d')} id{mid:05d}]]"
-        out.append(f"| {dt:%Y-%m-%d %H:%M} | {link} | {preview.replace('|','\\|')} | {mark} |")
+        safe = preview.replace("|", "\\|")
+        out.append(f"| {dt:%Y-%m-%d %H:%M} | {link} | {safe} | {mark} |")
     with open(os.path.join(ANALYTICS, "Post index.md"), "w",
               encoding="utf-8", newline="\n") as f:
         f.write("\n".join(out) + "\n")
